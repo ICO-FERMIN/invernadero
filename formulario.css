@@ -1,0 +1,124 @@
+/* Paleta de Colores Rosa */
+:root {
+    --color-primario: #FF69B4; /* Rosa Fuerte - Hot Pink */
+    --color-secundario: #FFC0CB; /* Rosa Claro - Pink */
+    --color-fondo: #FDF4F8; /* Rosa muy pálido */
+    --color-texto: #333;
+    --color-borde: #FFB6C1; /* Rosa pastel */
+    --color-hover: #E85A9B; /* Rosa más oscuro para hover */
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    border: 3px solid var(--color-primario);
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-primario);
+    border-bottom: 2px solid var(--color-secundario);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--color-hover);
+    margin-top: 25px;
+    border-left: 5px solid var(--color-primario);
+    padding-left: 10px;
+}
+
+h3 {
+    color: var(--color-primario);
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    display: inline-block;
+    margin-right: 10px;
+    min-width: 150px; /* Asegura alineación */
+    font-weight: bold;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+textarea:focus {
+    border-color: var(--color-primario);
+    outline: none;
+    box-shadow: 0 0 5px var(--color-secundario);
+}
+
+.producto-item {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-secundario);
+    border-radius: 8px;
+    background-color: #FFF9FC;
+}
+
+.producto-item .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.producto-item .form-group label {
+    font-weight: normal;
+    min-width: 250px;
+}
+
+input[type="checkbox"], 
+input[type="radio"] {
+    margin-right: 8px;
+    accent-color: var(--color-primario); /* Cambia el color del check/radio */
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid var(--color-borde);
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-hover);
+    transform: translateY(-2px);
+}
