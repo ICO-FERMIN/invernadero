@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="cuadro.css">
     <link rel="stylesheet" href="cinta.css">
     <link rel="stylesheet" href="mosaico.css">
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
 
@@ -125,5 +126,81 @@
     </section>
 
 </section>
+
+<div class="container">
+        <h1>Pedido Rosado de Belleza ✨</h1>
+        <form action="#" method="post" class="maquillaje-form">
+
+            <section class="datos-personales">
+                <h2>Datos de Contacto</h2>
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </section>
+
+            <section class="productos">
+                <h2>Selección de Productos Rosados</h2>
+                
+                <div class="producto-item">
+                    <h3>Labiales Rosas 💄</h3>
+                    <div class="form-group">
+                        <input type="checkbox" id="labial1" name="producto" value="Rosa Claro Mate">
+                        <label for="labial1">Rosa Claro Mate</label>
+                        <input type="number" name="cantidad_labial1" min="0" max="10" value="0">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="labial2" name="producto" value="Fucsia Brillante">
+                        <label for="labial2">Fucsia Brillante</label>
+                        <input type="number" name="cantidad_labial2" min="0" max="10" value="0">
+                    </div>
+                </div>
+
+                <div class="producto-item">
+                    <h3>Rubor/Colorete Rosado 💖</h3>
+                    <div class="form-group">
+                        <input type="radio" id="rubor1" name="rubor" value="Rosa Durazno" required>
+                        <label for="rubor1">Rosa Durazno</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="rubor2" name="rubor" value="Malva Rosa" required>
+                        <label for="rubor2">Malva Rosa</label>
+                    </div>
+                </div>
+                
+                <div class="producto-item">
+                    <h3>Sombras de Ojos Rosas/Paleta de Sombras 👀</h3>
+                    <div class="form-group">
+                        <input type="checkbox" id="sombra1" name="producto" value="Paleta Rosas Cálidos">
+                        <label for="sombra1">Paleta Rosas Cálidos</label>
+                        <input type="number" name="cantidad_sombra1" min="0" max="5" value="0">
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="sombra2" name="producto" value="Sombra Individual Rosa Metálico">
+                        <label for="sombra2">Sombra Individual Rosa Metálico</label>
+                        <input type="number" name="cantidad_sombra2" min="0" max="10" value="0">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="notas">
+                <h2>Notas Adicionales</h2>
+                <div class="form-group">
+                    <label for="instrucciones">Instrucciones Especiales (ej. Tipo de envío):</label>
+                    <textarea id="instrucciones" name="instrucciones" rows="4"></textarea>
+                </div>
+            </section>
+
+            <div class="form-group submit-group">
+                <button type="submit">Realizar Pedido</button>
+            </div>
+
+        </form>
+    </div>
 </body>
 </html>
